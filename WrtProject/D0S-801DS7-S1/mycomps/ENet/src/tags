@@ -1,0 +1,111 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+App_Enet_Send	unix.c	/^int App_Enet_Send(char* ip,short port,void* buf,int len)$/;"	f
+App_InitENet	unix.c	/^int  App_InitENet(short listenport,short sendport,AppENetCallbacks* callbacks){$/;"	f
+App_UninitENet	unix.c	/^int   App_UninitENet()$/;"	f
+ENET_BUILDING_LIB	callbacks.c	5;"	d	file:
+ENET_BUILDING_LIB	host.c	5;"	d	file:
+ENET_BUILDING_LIB	list.c	5;"	d	file:
+ENET_BUILDING_LIB	packet.c	6;"	d	file:
+ENET_BUILDING_LIB	peer.c	6;"	d	file:
+ENET_BUILDING_LIB	protocol.c	8;"	d	file:
+ENET_BUILDING_LIB	unix.c	20;"	d	file:
+ENet_Recv_Task	unix.c	/^static void ENet_Recv_Task(void* param){$/;"	f	file:
+HAS_POLL	unix.c	28;"	d	file:
+MSG_NOSIGNAL	unix.c	40;"	d	file:
+Sendclient	unix.c	/^static ENetHost * Sendclient = NULL; $/;"	v	file:
+appcallbacks	unix.c	/^static AppENetCallbacks appcallbacks = {NULL,NULL};$/;"	v	file:
+callbacks	callbacks.c	/^static ENetCallbacks callbacks = { malloc, free, rand };$/;"	v	file:
+commandSizes	protocol.c	/^static size_t commandSizes [ENET_PROTOCOL_COMMAND_COUNT] =$/;"	v	file:
+crcTable	packet.c	/^static enet_uint32 crcTable [256];$/;"	v	file:
+enet_address_get_host	unix.c	/^enet_address_get_host (const ENetAddress * address, char * name, size_t nameLength)$/;"	f
+enet_address_get_host_ip	unix.c	/^enet_address_get_host_ip (const ENetAddress * address, char * name, size_t nameLength)$/;"	f
+enet_address_set_host	unix.c	/^enet_address_set_host (ENetAddress * address, const char * name)$/;"	f
+enet_crc32	packet.c	/^enet_crc32 (const ENetBuffer * buffers, size_t bufferCount)$/;"	f
+enet_deinitialize	unix.c	/^enet_deinitialize (void)$/;"	f
+enet_free	callbacks.c	/^enet_free (void * memory)$/;"	f
+enet_host_bandwidth_limit	host.c	/^enet_host_bandwidth_limit (ENetHost * host, enet_uint32 incomingBandwidth, enet_uint32 outgoingBandwidth)$/;"	f
+enet_host_bandwidth_throttle	host.c	/^enet_host_bandwidth_throttle (ENetHost * host)$/;"	f
+enet_host_broadcast	host.c	/^enet_host_broadcast (ENetHost * host, enet_uint8 channelID, ENetPacket * packet)$/;"	f
+enet_host_check_events	protocol.c	/^enet_host_check_events (ENetHost * host, ENetEvent * event)$/;"	f
+enet_host_connect	host.c	/^enet_host_connect (ENetHost * host, const ENetAddress * address, size_t channelCount)$/;"	f
+enet_host_create	host.c	/^enet_host_create (const ENetAddress * address, size_t peerCount, enet_uint32 incomingBandwidth, enet_uint32 outgoingBandwidth)$/;"	f
+enet_host_destroy	host.c	/^enet_host_destroy (ENetHost * host)$/;"	f
+enet_host_flush	protocol.c	/^int enet_host_flush (ENetHost * host)$/;"	f
+enet_host_service	protocol.c	/^int enet_host_service (ENetHost * host, ENetEvent * event, enet_uint32 timeout)$/;"	f
+enet_initialize	unix.c	/^enet_initialize (void)$/;"	f
+enet_initialize_with_callbacks	callbacks.c	/^enet_initialize_with_callbacks (ENetVersion version, const ENetCallbacks * inits)$/;"	f
+enet_list_clear	list.c	/^enet_list_clear (ENetList * list)$/;"	f
+enet_list_insert	list.c	/^enet_list_insert (ENetListIterator position, void * data)$/;"	f
+enet_list_remove	list.c	/^enet_list_remove (ENetListIterator position)$/;"	f
+enet_list_size	list.c	/^enet_list_size (ENetList * list)$/;"	f
+enet_malloc	callbacks.c	/^enet_malloc (size_t size)$/;"	f
+enet_packet_create	packet.c	/^enet_packet_create (const void * data, size_t dataLength, enet_uint32 flags)$/;"	f
+enet_packet_destroy	packet.c	/^enet_packet_destroy (ENetPacket * packet)$/;"	f
+enet_packet_resize	packet.c	/^enet_packet_resize (ENetPacket * packet, size_t dataLength)$/;"	f
+enet_peer_disconnect	peer.c	/^enet_peer_disconnect (ENetPeer * peer, enet_uint32 data)$/;"	f
+enet_peer_disconnect_later	peer.c	/^enet_peer_disconnect_later (ENetPeer * peer, enet_uint32 data)$/;"	f
+enet_peer_disconnect_now	peer.c	/^enet_peer_disconnect_now (ENetPeer * peer, enet_uint32 data)$/;"	f
+enet_peer_ping	peer.c	/^enet_peer_ping (ENetPeer * peer)$/;"	f
+enet_peer_queue_acknowledgement	peer.c	/^enet_peer_queue_acknowledgement (ENetPeer * peer, const ENetProtocol * command, enet_uint16 sentTime)$/;"	f
+enet_peer_queue_incoming_command	peer.c	/^enet_peer_queue_incoming_command (ENetPeer * peer, const ENetProtocol * command, ENetPacket * packet, enet_uint32 fragmentCount)$/;"	f
+enet_peer_queue_outgoing_command	peer.c	/^enet_peer_queue_outgoing_command (ENetPeer * peer, const ENetProtocol * command, ENetPacket * packet, enet_uint32 offset, enet_uint16 length)$/;"	f
+enet_peer_receive	peer.c	/^enet_peer_receive (ENetPeer * peer, enet_uint8 channelID)$/;"	f
+enet_peer_reset	peer.c	/^enet_peer_reset (ENetPeer * peer)$/;"	f
+enet_peer_reset_incoming_commands	peer.c	/^enet_peer_reset_incoming_commands (ENetList * queue)$/;"	f	file:
+enet_peer_reset_outgoing_commands	peer.c	/^enet_peer_reset_outgoing_commands (ENetList * queue)$/;"	f	file:
+enet_peer_reset_queues	peer.c	/^enet_peer_reset_queues (ENetPeer * peer)$/;"	f
+enet_peer_send	peer.c	/^enet_peer_send (ENetPeer * peer, enet_uint8 channelID, ENetPacket * packet)$/;"	f
+enet_peer_throttle	peer.c	/^enet_peer_throttle (ENetPeer * peer, enet_uint32 rtt)$/;"	f
+enet_peer_throttle_configure	peer.c	/^enet_peer_throttle_configure (ENetPeer * peer, enet_uint32 interval, enet_uint32 acceleration, enet_uint32 deceleration)$/;"	f
+enet_protocol_check_timeouts	protocol.c	/^enet_protocol_check_timeouts (ENetHost * host, ENetPeer * peer, ENetEvent * event)$/;"	f	file:
+enet_protocol_command_size	protocol.c	/^enet_protocol_command_size (enet_uint8 commandNumber)$/;"	f
+enet_protocol_dispatch_incoming_commands	protocol.c	/^enet_protocol_dispatch_incoming_commands (ENetHost * host, ENetEvent * event)$/;"	f	file:
+enet_protocol_handle_acknowledge	protocol.c	/^enet_protocol_handle_acknowledge (ENetHost * host, ENetEvent * event, ENetPeer * peer, const ENetProtocol * command)$/;"	f	file:
+enet_protocol_handle_bandwidth_limit	protocol.c	/^enet_protocol_handle_bandwidth_limit (ENetHost * host, ENetPeer * peer, const ENetProtocol * command)$/;"	f	file:
+enet_protocol_handle_connect	protocol.c	/^enet_protocol_handle_connect (ENetHost * host, ENetProtocolHeader * header, ENetProtocol * command)$/;"	f	file:
+enet_protocol_handle_disconnect	protocol.c	/^enet_protocol_handle_disconnect (ENetHost * host, ENetPeer * peer, const ENetProtocol * command)$/;"	f	file:
+enet_protocol_handle_incoming_commands	protocol.c	/^enet_protocol_handle_incoming_commands (ENetHost * host, ENetEvent * event)$/;"	f	file:
+enet_protocol_handle_ping	protocol.c	/^enet_protocol_handle_ping (ENetHost * host, ENetPeer * peer, const ENetProtocol * command)$/;"	f	file:
+enet_protocol_handle_send_fragment	protocol.c	/^enet_protocol_handle_send_fragment (ENetHost * host, ENetPeer * peer, const ENetProtocol * command, enet_uint8 ** currentData)$/;"	f	file:
+enet_protocol_handle_send_reliable	protocol.c	/^enet_protocol_handle_send_reliable (ENetHost * host, ENetPeer * peer, const ENetProtocol * command, enet_uint8 ** currentData)$/;"	f	file:
+enet_protocol_handle_send_unreliable	protocol.c	/^enet_protocol_handle_send_unreliable (ENetHost * host, ENetPeer * peer, const ENetProtocol * command, enet_uint8 ** currentData)$/;"	f	file:
+enet_protocol_handle_send_unsequenced	protocol.c	/^enet_protocol_handle_send_unsequenced (ENetHost * host, ENetPeer * peer, const ENetProtocol * command, enet_uint8 ** currentData)$/;"	f	file:
+enet_protocol_handle_throttle_configure	protocol.c	/^enet_protocol_handle_throttle_configure (ENetHost * host, ENetPeer * peer, const ENetProtocol * command)$/;"	f	file:
+enet_protocol_handle_verify_connect	protocol.c	/^enet_protocol_handle_verify_connect (ENetHost * host, ENetEvent * event, ENetPeer * peer, const ENetProtocol * command)$/;"	f	file:
+enet_protocol_notify_connect	protocol.c	/^enet_protocol_notify_connect (ENetHost * host, ENetPeer * peer, ENetEvent * event)$/;"	f	file:
+enet_protocol_notify_disconnect	protocol.c	/^enet_protocol_notify_disconnect (ENetHost * host, ENetPeer * peer, ENetEvent * event)$/;"	f	file:
+enet_protocol_receive_incoming_commands	protocol.c	/^enet_protocol_receive_incoming_commands (ENetHost * host, ENetEvent * event)$/;"	f	file:
+enet_protocol_remove_sent_reliable_command	protocol.c	/^enet_protocol_remove_sent_reliable_command (ENetPeer * peer, enet_uint16 reliableSequenceNumber, enet_uint8 channelID)$/;"	f	file:
+enet_protocol_remove_sent_unreliable_commands	protocol.c	/^enet_protocol_remove_sent_unreliable_commands (ENetPeer * peer)$/;"	f	file:
+enet_protocol_send_acknowledgements	protocol.c	/^enet_protocol_send_acknowledgements (ENetHost * host, ENetPeer * peer)$/;"	f	file:
+enet_protocol_send_outgoing_commands	protocol.c	/^enet_protocol_send_outgoing_commands (ENetHost * host, ENetEvent * event, int checkForTimeouts)$/;"	f	file:
+enet_protocol_send_reliable_outgoing_commands	protocol.c	/^enet_protocol_send_reliable_outgoing_commands (ENetHost * host, ENetPeer * peer)$/;"	f	file:
+enet_protocol_send_unreliable_outgoing_commands	protocol.c	/^enet_protocol_send_unreliable_outgoing_commands (ENetHost * host, ENetPeer * peer)$/;"	f	file:
+enet_rand	callbacks.c	/^enet_rand (void)$/;"	f
+enet_socket_accept	unix.c	/^enet_socket_accept (ENetSocket socket, ENetAddress * address)$/;"	f
+enet_socket_connect	unix.c	/^enet_socket_connect (ENetSocket socket, const ENetAddress * address)$/;"	f
+enet_socket_create	unix.c	/^enet_socket_create (ENetSocketType type, const ENetAddress * address)$/;"	f
+enet_socket_destroy	unix.c	/^enet_socket_destroy (ENetSocket socket)$/;"	f
+enet_socket_receive	unix.c	/^enet_socket_receive (ENetSocket socket,$/;"	f
+enet_socket_send	unix.c	/^enet_socket_send (ENetSocket socket,$/;"	f
+enet_socket_set_option	unix.c	/^enet_socket_set_option (ENetSocket socket, ENetSocketOption option, int value)$/;"	f
+enet_socket_wait	unix.c	/^enet_socket_wait (ENetSocket socket, enet_uint32 * condition, enet_uint32 timeout)$/;"	f
+enet_time_get	unix.c	/^enet_time_get (void)$/;"	f
+enet_time_set	unix.c	/^enet_time_set (enet_uint32 newTimeBase)$/;"	f
+g_init	unix.c	/^static int    g_init = 0;$/;"	v	file:
+g_thread_exit	unix.c	/^static int    g_thread_exit = 0;$/;"	v	file:
+gudpThread	unix.c	/^static pthread_t  gudpThread;$/;"	v	file:
+initialize_crc32	packet.c	/^static void initialize_crc32 ()$/;"	f	file:
+initializedCRC32	packet.c	/^static int initializedCRC32 = 0;$/;"	v	file:
+listen_port	unix.c	/^static short  listen_port = 20302;$/;"	v	file:
+sconnect	unix.c	/^static ENetPeer* sconnect(ENetHost * client, char *host, int port) {$/;"	f	file:
+sdisconnect	unix.c	/^static void sdisconnect(ENetHost *client, ENetPeer *peer) $/;"	f	file:
+send_port	unix.c	/^static short  send_port = 20300;$/;"	v	file:
+service	unix.c	/^static void service(ENetHost *client) {$/;"	f	file:
+socklen_t	unix.c	/^typedef int socklen_t;$/;"	t	file:
+timeBase	unix.c	/^static enet_uint32 timeBase = 0;$/;"	v	file:

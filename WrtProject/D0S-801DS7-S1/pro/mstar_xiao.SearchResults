@@ -1,0 +1,5 @@
+---- InitSystemInfo Matches (4 in 4 files) ----
+Demo.cpp (mycomps\tmwrtcommon\demo):	InitSystemInfo();
+Main.cpp (hd801\src):        InitSystemInfo();
+tmSysConfig.h (mycomps\tmsysteminfo\include):    void InitSystemInfo(); //在多任务中，同步处理。
+tmSystemInfo.c (mycomps\tmsysteminfo\src):void InitSystemInfo(){

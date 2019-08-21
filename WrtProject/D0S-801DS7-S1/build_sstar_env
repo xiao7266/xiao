@@ -1,0 +1,6 @@
+export PROJECT_PATH=/home/xiaojz/ssd201/project
+export BUILD_APP_PATH=/home/xiaojz/xiao/WrtProject
+export TARGET_TOOLCHAIN=arm-linux-gnueabihf-
+export COMMON_COMPS=${BUILD_APP_PATH}/D0S-801DS7-S1/mycomps
+export PRIVATE_COMPS=${BUILD_APP_PATH}/D0S-801DS7-S1/mycomps
+export PATH=$PATH:/home/xiaojz/ssd201/tools/bin

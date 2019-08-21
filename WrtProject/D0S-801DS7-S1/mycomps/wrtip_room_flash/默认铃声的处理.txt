@@ -1,0 +1,4 @@
+1：将\\192.168.1.87\研发二部共享\素材\音频\WRT-录音\ring
+里面英文铃声COPY到开发版的/home/wrt/en/ring目录下 ,中文版copy到/homt/wrt/zh/ring目录下。
+
+2：替换libwrtip_room_flash.so

@@ -1,0 +1,5 @@
+---- ROOM_CALLROOM Matches (4 in 3 files) ----
+CmdId.h (include):#define ROOM_CALLROOM          	(CMD_ID(0x0009))
+tcpCall.c (src):		if(target->cnn_cmd == ROOM_CALLROOM){//we should end other 3 indoor machines's call
+tcpCall.c (src):		p->uCmd = ROOM_CALLROOM;
+wrtTcp.c (src):    	case ROOM_CALLROOM://indoor machine call indoor machine

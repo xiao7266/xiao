@@ -1,0 +1,12 @@
+prefix=/opt/northstar_equinox_ip_camera_ext_SDK_2_6_4_IPCAM_sdk/output/staging/usr
+exec_prefix=/usr
+libdir=/lib
+includedir=/include
+
+Name: SDL_ttf
+Description: ttf library for Simple DirectMedia Layer with FreeType 2 support
+Version: 2.0.11
+Requires: sdl >= 1.2.4
+Libs: -L${libdir} -lSDL_ttf
+Cflags: -I${includedir}/SDL
+
